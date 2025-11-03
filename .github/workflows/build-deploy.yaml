@@ -23,6 +23,8 @@ jobs:
           - StandaloneWindows64
           - WebGL
     steps:
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
       - name: Checkout
         uses: actions/checkout@v4
         with:
