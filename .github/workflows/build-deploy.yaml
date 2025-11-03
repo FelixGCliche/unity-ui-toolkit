@@ -29,10 +29,13 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Restore Unity Library Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: Library
-          key: Library-unity-ui-toolkit-${{ matrix.targetPlatform }}
+          key: Library-build-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-build
+            Library-
       - name: Build
         uses: game-ci/unity-builder@v4
         env:
