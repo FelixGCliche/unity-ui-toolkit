@@ -1,6 +1,6 @@
 :root {
   -unity-font-definition: url("../Fonts/Inter/Inter SDF.asset");
-  -unity-font: url("../Fonts/Inter/Inter.ttf");
+  -unity-font-style: normal;
 }
 
 .unity-ui-document__root {
