@@ -1,0 +1,9 @@
+:root {
+  -unity-font-definition: url("../Fonts/Inter/Inter SDF.asset");
+  -unity-font-style: normal;
+}
+
+.unity-ui-document__root {
+  width: 100%;
+  height: 100%;
+}
